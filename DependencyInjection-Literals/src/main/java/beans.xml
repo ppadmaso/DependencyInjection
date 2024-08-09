@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Below is the way of injecting literals using setter and constructor injection
+	property tag for setter
+	constructor-arg is for constructor injection
+	
+	type is used to provide the datatype of the element it is always a best practice to provide the type just to avoid ambiguity problem
+	 -->
+	<bean id="student"
+		class="com.seleniumexpress.spring.DependencyInjection.Student">
+		<property name="studentName" value="prabhakar" />
+		<constructor-arg name="id" value="1" type="int"/>
+	</bean>
+
+
+</beans> 
